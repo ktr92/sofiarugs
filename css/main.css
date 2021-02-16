@@ -8,7 +8,7 @@ html{
 body {
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
-	color: #000;
+	  color: #3e3e3e;
 	 font-weight: 300;
     font-style: normal;
 	line-height: 1;
@@ -256,7 +256,7 @@ ul.mainmenu__main > li {
 
 
 
-ul.mainmenu__main > li.mainmenu__catalog a {
+ul.mainmenu__main > li.mainmenu__catalog > a {
 	background: #af9d74;
 	  font-size: 14px;
 	  color: rgb(255, 255, 255);
@@ -266,7 +266,7 @@ ul.mainmenu__main > li.mainmenu__catalog a {
 	height: 46px;
 	white-space: nowrap;
 	line-height: 46px;
-	padding: 0 25px;
+	padding: 0 22px;
 	display: flex;
 	align-items: center;	
 	
@@ -292,7 +292,7 @@ ul.mainmenu__main > li.mainmenu__catalog a {
 	line-height: 30px;
 	display: block;
 	padding: 7px 15px;
-	border-radius: 8px;
+	border-radius: 6px;
 	width: 100%;
 	border: none;
 }
@@ -360,11 +360,81 @@ ul.mainmenu__main > li.mainmenu__catalog a {
 	width: calc(100% - 532px);
 }
 
+.headernav {
+	position: relative;
+}
+
+.mainmenu__submenu {
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 46px;
+	box-shadow: 0 5px 20px -7px #666666;
+	border-top: 4px solid #af9d74;
+	padding: 24px 30px;
+}
+
+@media (min-width: 1000px) {
+	.mainmenu__catalog:hover .mainmenu__submenu {
+		display: block;
+	}
+}
+
+.submenucustom {
+	width: 285px;
+}
+
+.submenu__items {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -5px;
+}
+
+.submenucustom__image {
+    position: relative;
+    right: -1px;
+}
+
+.submenu__title {
+  font-size: 16px;
+  color: #af9d74;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+      font-weight: 600;
+}
 
 
+.submenu__list ul li  {
+  
+  margin-bottom: 16px;
+}
+.submenu__item {
+	padding: 0 5px;
+}
+.submenu__list ul li a {
+	font-size: 14px;
+  color: #3e3e3e;
+  font-weight: 500;
+      max-width: 200px;
+    display: block;
+}
+
+.submenucustom__link a  {
+  font-size: 16px;
+    color: #af9d74;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.submenucustom__image {
+	margin-bottom: 22px;
+}
 
 
+@media (max-width: 1343px) {
+	.submenucustom {
+		width: 225px;
+	}
 
-
-
+}
 
