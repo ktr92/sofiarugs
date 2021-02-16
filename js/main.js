@@ -5,13 +5,12 @@ $(document).ready(function() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-       autoplay: true,
-        autoplaySpeed: 3000,
+      /*  autoplay: true,
+        autoplaySpeed: 3000, */
         arrows: true,
         dots: true,
 		nextArrow: $(this).parent().parent().find('.mainslider__right'),
 		prevArrow: $(this).parent().parent().find('.mainslider__left'),
-       /* dotsClass: 'mainslider__dots_slick',*/
   });
 	 });
 	 
