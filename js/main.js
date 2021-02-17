@@ -106,7 +106,13 @@ $(document).ready(function() {
 		$(this).siblings('.submenu__list').slideToggle();
 		$(this).toggleClass('active');
 	});
+	
+	$('.filter__header').on('click', function() {
+		$(this).parent().toggleClass('filter__item_open');
+		$(this).siblings('.filter__form').slideToggle();
+	
 
+	});
 	
 	
 });		
