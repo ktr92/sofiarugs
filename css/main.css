@@ -634,7 +634,7 @@ margin-left: -3px;
 
 .filter__form {
 	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-bottom: 15px;
 }
 
 .filter__item .filter__header span {
@@ -681,20 +681,23 @@ background-image: url(/images/minus2.png);
 
 
  .formCost input{
-	width: 98px;
-	height: 48px;
-	line-height: 48pc;
+	width: 79px;
+	height: 34px;
+	line-height: 34px;
 	background: #FFFFFF;
 	border: 1px solid #E9E9E9;
 	box-sizing: border-box;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 16px;
-	line-height: 19px;
+	font-size: 13px;
 	align-items: center;
 	text-align: center;
 	color: rgba(82,98,114,0.5);
-	border-radius: 0;
+	border-radius: 2px;
+ }
+ 
+ .delim {
+	 color: rgba(82,98,114,0.5);
  }
 
  
@@ -863,7 +866,37 @@ span.dcheckbox__text {
 	
 }
 
+.ccheckbox__text {
+	border: 1px solid #dee2e6;
+	height: 30px;
+	width: 30px;
+	border-radius: 4px;
+	display: block;
+	cursor: pointer;
+}
 
+.filter__checkbox_colors {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+}
+
+.colorcheckbox {
+	margin: 0 5px 5px 5px;
+
+}
+
+
+.colorcheckbox input[type=checkbox] {
+    display: none;
+}
+
+
+.colorcheckbox input[type=checkbox]:checked + .ccheckbox__text {
+	border: 1px solid #af9d74;
+	box-shadow: 0 0 2px 2px #af9d74;
+
+}
 	
 @media (max-width: 1343px) {
 	.submenucustom {

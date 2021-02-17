@@ -672,6 +672,7 @@
 																			<label for="minCost"></label> 
 																			<input type="text" id="minCost" value="500" placeholder="">
 																		</div>
+																		<span class="delim">&ndash;</span>
 																		<div class="formCost__price_right">
 																			<label for="maxCost"></label> 
 																			<input type="text" id="maxCost" value="7500" placeholder="">
@@ -681,7 +682,7 @@
 															</div>
 														</div>
 													<script>
-														/* <фильтр по цене> */
+														/* <фильтр по ширине> */
 															$('input#maxCost').on('focusin', function(){
 																$(this).val("");
 															});
@@ -754,109 +755,118 @@
 																
 															};
 																
-															/* </фильтр по цене> */	
+															/* </фильтр по ширине> */	
 													</script>
 												</div>
 												
 												
-												<div class="filter__item filter__item_close">
+												<div class="filter__item filter__item_open">
 													<div class="filter__header">
-														<span>Мощность</span>
+														<span>Цвет</span>
 													</div>
 													<div class="filter__form">
-														<div class="filter__checkbox">
-															<div class="dcheckbox">
-																<label for="filter21" class="dcheckbox__label"><span>
+														<div class="filter__checkbox filter__checkbox_colors">
+															<div class="colorcheckbox">
+																<label for="filter21" class="сcheckbox__label"><span>
 																<input type="checkbox" id="filter21">
-																<span class="dcheckbox__text">I</span>
+																<span class="ccheckbox__text" style="background: #fff;"></span>
 																</span>
 																</label>																	
 															</div>
-															<div class="dcheckbox">
-																<label for="filter22" class="dcheckbox__label"><span>
+															<div class="colorcheckbox">
+																<label for="filter22" class="сcheckbox__label"><span>
 																<input type="checkbox" checked="" id="filter22">
-																<span class="dcheckbox__text">II</span>
+																<span class="ccheckbox__text" style="background: #0000ff;"></span>
 																</span>
 																</label>																	
 															</div>
-															<div class="dcheckbox">
-																<label for="filter23" class="dcheckbox__label"><span>
+															<div class="colorcheckbox">
+																<label for="filter23" class="сcheckbox__label"><span>
 																<input type="checkbox" id="filter23">
-																<span class="dcheckbox__text">III</span>
+																<span class="ccheckbox__text" style="background: #808080;"></span>
 																</span>
 																</label>																	
 															</div>
-															<div class="dcheckbox">
-																<label for="filter24" class="dcheckbox__label"><span>
+															<div class="colorcheckbox">
+																<label for="filter24" class="сcheckbox__label"><span>
 																<input type="checkbox" checked="" id="filter24">
-																<span class="dcheckbox__text">IV</span>
+																<span class="ccheckbox__text" style="background: #7b3f00;"></span>
 																</span>
 																</label>																	
 															</div>
-															<div class="dcheckbox">
-																<label for="filter25" class="dcheckbox__label"><span>
+															<div class="colorcheckbox">
+																<label for="filter25" class="сcheckbox__label"><span>
 																<input type="checkbox" id="filter25">
-																<span class="dcheckbox__text">V</span>
+																<span class="ccheckbox__text" style="background: #f5f5dc;"></span>
 																</span>
 																</label>																	
 															</div>
+															
+															
+															
 														</div>
 													</div>
 												</div>
-												<div class="filter__item filter__item_open">
+												
+												<div class="filter__item filter__item_close">
 													<div class="filter__header">
-														<span>Размер</span>
+														<span>Форма</span>
 													</div>
 													<div class="filter__form">
 														<div class="filter__checkbox">
 															<div class="dcheckbox">
 																<label for="filter31" class="dcheckbox__label"><span>
 																<input type="checkbox" id="filter31">
-																<span class="dcheckbox__text">I</span>
+																<span class="dcheckbox__text">
+																	<span class="dcheckbox_value">1</span> 
+																	<span class="dcheckbox__count">(2)</span>
+																</span>
 																</span>
 																</label>																	
 															</div>
 															<div class="dcheckbox">
 																<label for="filter32" class="dcheckbox__label"><span>
-																<input type="checkbox" checked="" id="filter32">
-																<span class="dcheckbox__text">II</span>
+																<input type="checkbox" id="filter32">
+																<span class="dcheckbox__text">
+																	<span class="dcheckbox_value">2</span> 
+																	<span class="dcheckbox__count">(3)</span>
+																</span>
 																</span>
 																</label>																	
 															</div>
 															<div class="dcheckbox">
 																<label for="filter33" class="dcheckbox__label"><span>
 																<input type="checkbox" id="filter33">
-																<span class="dcheckbox__text">III</span>
+																<span class="dcheckbox__text">
+																	<span class="dcheckbox_value">3</span> 
+																	<span class="dcheckbox__count">(4)</span>
+																</span>
 																</span>
 																</label>																	
 															</div>
 															<div class="dcheckbox">
 																<label for="filter34" class="dcheckbox__label"><span>
-																<input type="checkbox" checked="" id="filter34">
-																<span class="dcheckbox__text">IV</span>
+																<input type="checkbox" id="filter34">
+																<span class="dcheckbox__text">
+																	<span class="dcheckbox_value">4</span> 
+																	<span class="dcheckbox__count">(5)</span>
+																</span>
 																</span>
 																</label>																	
 															</div>
-															<div class="dcheckbox">
-																<label for="filter35" class="dcheckbox__label"><span>
-																<input type="checkbox" id="filter35">
-																<span class="dcheckbox__text">V</span>
-																</span>
-																</label>																	
-															</div>
+															
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="filter__buttons">
+												
+											<!--<div class="filter__buttons">
 												<div class="filter__button">
 													<a class="btn_border">Сбросить</a>
 												</div>
 												<div class="filter__button">
-													<!-- можно <a> или <input> без разницы -->
 													<button type="submit" class="btn_main btn_main3">Показать</button>
 												</div>
-											</div>
+											</div>-->
 										</form>
 									</div>
 								</div>
