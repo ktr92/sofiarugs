@@ -110,9 +110,17 @@ $(document).ready(function() {
 	$('.filter__header').on('click', function() {
 		$(this).parent().toggleClass('filter__item_open');
 		$(this).siblings('.filter__form').slideToggle();
+	});
+	
+	$('.showall').on('click', function() {
+		$(this).hide();
+		$(this).siblings('.productslist__items_hidden').toggleClass('productslist__items_hidden');
 	
 
 	});
+	
+	
+	
 	
 	function incrementValue(e) {
 	  e.preventDefault();
