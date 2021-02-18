@@ -1036,19 +1036,19 @@ label {
 
 
 .quantity {
-	background: #eef0f1;
+	background: #eaeaea;
 	display: inline-block;
 }
 
 input.quantity-field {
-	max-width: 52px;
+	max-width: 35px;
 	border: none;
 	background: none;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 22px;
-	line-height: 40px;
-	height: 40px;
+	line-height: 38px;
+	height: 38px;
 	
 	/* identical to box height, or 55px */
 	text-align: center;
@@ -1066,45 +1066,28 @@ input.quantity-field::-webkit-inner-spin-button {
 	background: none;
 	border: none;
 	font-size: 29px;
-	line-height: 1;
 	vertical-align: middle;
-	padding: 0 7px;
+	padding: 0 4px;
 	color: #141414;
 	height: 24px;
-	height: 40px;
-	line-height: 40px;
-	font-size: 22px;
+	height: 38px;
+	line-height: 38px;
 	padding: 0 4px;
+	font-weight: 500;
 }
 
 .quantity input[type="button"].quantity-plus {
     position: relative;
-    top: 0;
-	padding: 0 10px 0 0;
+    top: -2px;
+	padding: 0 12px 0 0;
 }
 
 .quantity input[type="button"].quantity-minus {
     position: relative;
-    top: 0;
-	padding: 0 0 0 10px;
+    top: -3px;
+	padding: 0 0 0 12px;
 }
 
-.productcard_add a.btn_cart  {
-  font-size: 12px;
-  color: rgb(209, 212, 215);
-  text-transform: uppercase;
-	height: 40px;
-	line-height: 40px;
-	white-space: nowrap;
-	padding: 0 12px;
-	font-weight: 500;
-}
-.btn_cart span {
-	padding-left: 5px;
-}
-.btn_cart * {
-	vertical-align: middle;
-}
 
 .productcard__top {
 	max-width: 305px;
@@ -1154,7 +1137,7 @@ select {
 .productslist__items {
 	display: flex;
 	margin: 0 -33px;
-	
+	flex-wrap: wrap;
 }
 
 .productslist__item {
@@ -1166,6 +1149,43 @@ select {
 .catalogpage__main {
 	width: calc(100% - 280px);
 	margin-left: 20px;
+}
+
+.btn_main2 {
+	border-radius: 0;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 26px;
+}
+
+.addtofav svg {
+	width: 24px;
+	height: 24px;
+	transition: all 0.3s ease;
+}
+.addtofav svg:hover {
+	fill: #af9d74;
+}
+
+
+.addtofav {
+	padding: 0 3px 0 2px;
+}
+
+.addtofav_active {
+	display: none;
+}
+
+.tofav_added .addtofav {
+	display: none;
+}
+.tofav_added .addtofav_active {
+	display: block;
+}
+.addtofav_active svg {
+	fill: #af9d74;
 }
 
 @media (min-width: 999px) {
@@ -1181,7 +1201,7 @@ select {
 			/*margin: -10px;*/
 		   /* width: 108%;*/
 		height: auto;
-			box-shadow: -1px 6px 21px 0 rgba(0,0,0,.31);
+			box-shadow: -1px 6px 10px 0 rgba(0,0,0,.31);
 		z-index: 999;
 		padding: 10px; margin: -10px;
 		width: calc(100% + 20px);
