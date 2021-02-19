@@ -54,6 +54,43 @@ $(document).ready(function() {
 	  });
 	} catch(err) {
 	}
+	
+	try {	
+	  $('.reviews__slider').each(function() {
+		  $(this).slick({
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+		  /* autoplay: true,
+			autoplaySpeed: 3000,*/
+			arrows: false,
+			dots: true,
+		
+		   /* dotsClass: 'mainslider__dots_slick',*/
+		   responsive: [
+			{
+			  breakpoint: 1200,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+			  }
+			},
+			{
+			  breakpoint: 768,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			  }
+			}
+			
+			]
+			});
+	  });
+	} catch(err) {
+	}
+	
+	
+	
 	try {
 	 $('.products-slider').slick({
         infinite: true,
