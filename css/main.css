@@ -2275,6 +2275,128 @@ span.lb-number {
 }
 
 
+.errorpage__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	padding: 220px 0;
+}
+.errorpage__code svg {
+	max-width: 320px;
+}
+.errorpage__code svg path {
+	fill: #b4a480;
+}
+.errorpage__code {
+	text-align: center;
+}
+.errorpage__info {
+	text-align: center;
+}
+
+.errorpage__left {
+	width: 50%;
+}
+.errorpage__right {
+	width: 50%;
+}
+.errorpage__name {
+	margin-bottom: 5px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.errorpage__title {
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+.errorpage__text {
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.errorpage .container {
+	height: 100%;
+}
+
+.contentpage_flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contentpage_flex h1 {
+	margin-top: 0;
+}
+
+.contentpage {
+	padding: 0 0 45px 0;
+}
+.contactspage__caption {
+	font-weight: 600;
+}
+
+.contactspage__left {
+	width: 45%;
+}
+.contactspage__right {
+	width: 55%;
+}
+
+
+.contactspage__map iframe {
+	width: 100%;
+	max-width: 100%;
+}
+
+.contactspage__caption {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.contactspage__text {
+	font-size: 17px;
+	line-height: 1.4;
+}
+
+.contactspage__text a {
+	font-size: 17px;
+}
+.contactspage__item {
+	margin-bottom: 20px;
+}
+
+.contactspage__items {
+	padding-right: 30px;
+}
+
+.contentpage_flex.success {
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.success__left {
+	margin-right: 60px;
+}
+
+
+
+.success__right p {
+	font-size: 16px;
+}
+
+.success {
+	padding:15px 0;
+}
+
+
+.success__title {
+  font-size: 30px;
+  color: rgb(62, 62, 62);
+  margin-bottom: 15px;
+}
+
+
  @media (max-width: 1343px) {
 	.submenucustom {
 		width: 225px;
@@ -2301,6 +2423,69 @@ span.lb-number {
 
 
 @media (max-width: 999px) {
+	
+	.success__left {
+		order: 2;
+		margin-top: 30px;
+	}
+	.success__title {
+		font-size: 20px;
+	}
+	
+	.contentpage_flex  {
+		flex-wrap: wrap;
+		}
+		.contactspage__left {
+		width: 100%;
+	}
+	.contactspage__right {
+		width: 100%;
+	}
+		
+.errorpage__content {
+	
+	height: initial;
+	flex-wrap: wrap;
+	padding: 30px 0;
+}
+.errorpage__code svg {
+	max-width: 220px;
+}
+
+.errorpage__code {
+	text-align: center;
+}
+.errorpage__info {
+	text-align: center;
+}
+
+.errorpage__left {
+	width: 100%;
+	margin-bottom: 40px;
+}
+.errorpage__right {
+	width: 100%;
+}
+.errorpage__name {
+	margin-bottom: 5px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.errorpage__title {
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+.errorpage__text {
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.errorpage .container {
+	height: 100%;
+}
+
+
 	.modal_callback .modal-dialog {
 		width: 94%;
 	}
