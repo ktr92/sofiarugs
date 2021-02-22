@@ -1118,9 +1118,10 @@ label, select, option {
 select {
 	width: 100%;
 	max-width: 305px;
+	min-width: 115px;
 	height: 32px;
 	line-height: 32px;
-	padding: 0 12px;
+	padding: 0 20px 0 12px;
 	font-size: 13px;
 	color: rgb(37, 38, 38);
 	font-weight: 500;
@@ -1872,8 +1873,190 @@ input.input_small:-moz-placeholder {
 	padding: 0 10px;
 }
 
+.breadcrumbs {
+	background: #eaeaea;
+	padding: 10px 0 10px 0;
+
+}
+.breadcrumbs ul {
+	list-style: none;
+		white-space: nowrap;
+}
+
+.breadcrumbs ul li {
+	display: inline;
+  font-size: 12px;
+  color: rgb(37, 38, 38);
+  padding-right: 2px;
+}
+
+.breadcrumbs ul li+li:before {
+	padding: 0 6px 0 0;
+	content: "/";
+		font-size: 12px;
+		vertical-align: middle;
+		
+		
+}
+
+
+.breadcrumbs ul li a>span {
+		font-style: normal;
+		font-weight: 300;
+		font-size: 12px;
+  color: rgb(37, 38, 38);
+		line-height: 18px;
+		/* identical to box height */
+	font-weight: 400;
+
+		color: #666666;
+
+	padding-left: 0;
+}
+
+.breadcrumbs ul li>span {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+  color: rgb(37, 38, 38);
+	line-height: 18px;
+	/* identical to box height */
+font-weight: 400;
+
+	color: #666666;
+	padding-left: 0;
 	
-@media (max-width: 1343px) {
+}
+
+.breadcrumbs ul li a:hover span {
+	opacity: 1;
+}
+
+.breadcrumbs ul li a:hover {
+	opacity: 0.6;
+}
+
+.blocktitle_flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 15px;
+}
+.selectsort select {
+	border: none;
+}
+
+.productslist_catalog h2 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.page {
+	padding: 5px 0;
+}
+span.dcheckbox_value {
+	font-weight: 600;
+}
+
+.filtertoggle {
+	display: none;
+}
+
+
+.pagination {
+	text-align: center;
+	display: block;
+	padding: 20px 0 20px 0;
+}
+
+
+.pagination li {
+	 display:inline-block;
+
+}
+.pagination ul {
+	display: flex;
+}
+
+.pagination > span  {
+	font-size: 18px;
+}
+
+.pagination__content {
+	display: flex;
+}
+
+.pagination li a {
+	display: block;
+	width: 28px;
+	height: 28px;
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	
+	
+	font-size: 13px;
+	line-height: 28px;
+	text-align:center;
+	color: rgb(37, 38, 38);
+
+
+}
+.pagination li span {
+	display: block;
+	width: 28px;
+	height: 28px;
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	
+	
+	font-size: 13px;
+	line-height: 28px;
+	text-align:center;
+	color: rgb(37, 38, 38);
+
+
+}
+
+
+.pagination li.active a {
+	background: #af9d74;
+	color: #fff;
+	border-left: 1px solid #af9d74;
+	border-top: 1px solid #af9d74;
+	border-bottom: 1px solid #af9d74;
+}
+.pagination li:hover a {
+	background: #af9d74;
+	color: #fff;
+	border-left: 1px solid #af9d74;
+	border-top: 1px solid #af9d74;
+	border-bottom: 1px solid #af9d74;
+}
+a.pagination__arrow {
+	display: block;
+	width: 28px;
+	height: 28px;
+	font-size: 13px;
+	line-height: 25px;
+	text-align:center;
+	color: rgb(37, 38, 38);
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+}
+.pagination__arrow_right {
+	border-right: 1px solid #cccccc;
+
+}
+a.pagination__arrow:hover {
+	opacity: 0.7;
+}
+.catalogpage.page .filter {
+	top: 85px;
+}
+
+ @media (max-width: 1343px) {
 	.submenucustom {
 		width: 225px;
 	}
@@ -1897,12 +2080,34 @@ input.input_small:-moz-placeholder {
 	
 }
 
-.filtertoggle {
-	display: none;
-}
-
 
 @media (max-width: 999px) {
+	.modal_callback .modal-dialog {
+		width: 94%;
+	}
+	.pagination {
+		margin: 20px 0 0 0;
+		padding: 10px 0;
+	}
+
+	.blocktitle_flex {
+		flex-wrap: wrap;
+		padding-top: 5px;
+	}
+	.blocktitle_flex .toptitlepage{
+		order: -1;
+		width: 100%;
+	}
+	.productslist_catalog .toptitlepage {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	
+	
+	.breadcrumbs {
+    overflow: auto;
+}
+
 	.filtertoggle {
 	display: block;
 	border: 1px solid #000;

@@ -548,46 +548,15 @@
 			</div>
 		</header>
 		<main>
-			<div class="mainslider">
+			<div class="breadcrumbs">	
 				<div class="container">
-					<div class="mainslider__container">
-						<div class="mainslider__slider">
-							<div class="mainslider__slide">
-								<div class="mainslider__wrapper" style="background-image: url(/images/slide1.jpg)">
-									<div class="mainslider__content">
-										<div class="mainslider__title">Новое поступление турецких ковров</div>
-										<div class="mainslider__subtitle">Широкий выбор отменного качества от проверенных производителей</div>
-										<div class="mainslider__link"><a href="" class="btn_main">Перейти в каталог</a></div>
-									</div>
-								</div>
-							</div>
-							<div class="mainslider__slide">
-								<div class="mainslider__wrapper" style="background-image: url(/images/slide1.jpg)">
-									<div class="mainslider__content">
-										<div class="mainslider__title">Новое поступление турецких ковров</div>
-										<div class="mainslider__subtitle">Широкий выбор отменного качества от проверенных производителей</div>
-										<div class="mainslider__link"><a href="" class="btn_main">Перейти в каталог</a></div>
-									</div>
-								</div>
-							</div>
-							<div class="mainslider__slide">
-								<div class="mainslider__wrapper" style="background-image: url(/images/slide1.jpg)">
-									<div class="mainslider__content">
-										<div class="mainslider__title">Новое поступление турецких ковров</div>
-										<div class="mainslider__subtitle">Широкий выбор отменного качества от проверенных производителей</div>
-										<div class="mainslider__link"><a href="" class="btn_main">Перейти в каталог</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mainslider__arrows">
-							<div class="mainslider__left"><img src="/images/mainslider_left.png" alt=""></div>
-							<div class="mainslider__right"><img src="/images/mainslider_right.png" alt=""></div>
-						</div>
-					</div>
+					<ul>
+						<li><a href=""><span>Главная страница</span></a></li>
+						<li><span>Каталог продукции</span></li>
+					</ul>						
 				</div>
 			</div>
-			<div class="catalogpage">
+			<div class="catalogpage page">
 				<div class="container">
 					<div class="catalogpage__items">
 						<div class="catalogpage__left">
@@ -1061,13 +1030,23 @@
 							</aside>
 						</div>
 						<div class="catalogpage__main">
-							<div class="productslist">
-								<div class="blocktitle">
+							<div class="productslist productslist_catalog">
+								<div class="blocktitle blocktitle_flex">
 									<div class="filtertoggle">
 										<svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m90.5 0h-30v362h-30v90h30v60h30v-60h30v-90h-30zm0 422h-30v-30h30z"/><path d="m481.5 362h-30v-362h-30v362h-30v90h30v60h30v-60h30zm-30 60h-30v-30h30z"/><path d="m331.5 0h-30v222h-30v90h30v200h30v-200h30v-90h-30zm0 282h-30v-30h30z"/><path d="m210.5 0h-30v53.652h-30v90h30v368.348h30v-368.348h30v-90h-30zm0 113.652h-30v-30h30z"/></g></svg>
 										<span>Фильтр</span>
 									</div>
-									<h2>Популярные товары</h2>
+									<h2 class="toptitlepage">Каталог товаров (1054)</h2>
+									<div class="blocktitle__sort">
+										<label for="" class="selectsort">
+											<select name="" id="">
+												<option value="1">Сортировать</option>
+												<option value="2">По дате</option>
+												<option value="3">По дате</option>
+												<option value="4">По дате</option>
+											</select>
+										</label>
+									</div>
 								</div>
 								<div class="productslist__items">
 									<div class="productslist__item">
@@ -1142,7 +1121,9 @@
 														<div class="productcard__action">
 															<span>-25%</span>
 														</div>
-														
+														<div class="productcard__new">
+															<span>New</span>
+														</div>
 													</div>
 													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
 													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
@@ -1172,7 +1153,7 @@
 															<a href="#" class="btn_main btn_main2 btn_cart">
 																<span>В корзину</span>
 															</a>
-															<div class="tofav tofav_added">
+															<div class="tofav">
 																<a href="#" class="addtofav">
 																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
 																</a>
@@ -1197,7 +1178,9 @@
 														<img src="/images/product.png" alt=""/>
 													</div>
 													<div class="productcard__options">
-														
+														<div class="productcard__action">
+															<span>-25%</span>
+														</div>
 														<div class="productcard__new">
 															<span>New</span>
 														</div>
@@ -1246,62 +1229,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="productslist__item productslist__item_hidden-mobile">
-										<div class="productcard">
-											<div class="productcard_absolute">
-											<div class="productcard__top">
-												<a href="#">
-													<div class="productcard__img productcard__img_large">
-														<img src="/images/product.png" alt=""/>
-													</div>
-													<div class="productcard__options">
-														
-													</div>
-													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
-													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
-												</a>
-											</div>
-											<div class="productcard__bottom">
-												<div class="productcard__info">Шерсть, Osta</div>
-
-												<div class="productcard__form">
-													<form action="">
-														<div class="productcard__size">
-															<label class="wrap">
-																<select name="size" id="">
-																	<option selected="selected" value="0">Выберите размер:</option>
-																	<option value="1">1</option>
-																	<option value="2">2</option>
-																</select>
-															</label>
-														</div>
-													
-														<div class="productcard_add">
-															<div class="quantity">
-															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
-															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
-															</div>												
-															<a href="#" class="btn_main btn_main2 btn_cart">
-																<span>В корзину</span>
-															</a>
-															<div class="tofav">
-																<a href="#" class="addtofav">
-																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
-																</a>
-																<a href="#" class="addtofav addtofav_active">
-																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-																</a>
-																
-															</div>
-														</div>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="productslist__item productslist__item_hidden-mobile">
+								<div class="productslist__item">
 										<div class="productcard">
 											<div class="productcard_absolute">
 											<div class="productcard__top">
@@ -1361,7 +1289,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="productslist__item productslist__item_hidden-mobile">
+								<div class="productslist__item">
 										<div class="productcard">
 											<div class="productcard_absolute">
 											<div class="productcard__top">
@@ -1421,7 +1349,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="productslist__item productslist__item_hidden-mobile">
+								<div class="productslist__item">
 										<div class="productcard">
 											<div class="productcard_absolute">
 											<div class="productcard__top">
@@ -1481,7 +1409,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="productslist__item productslist__item_hidden-mobile">
+								<div class="productslist__item">
 										<div class="productcard">
 											<div class="productcard_absolute">
 											<div class="productcard__top">
@@ -1541,7 +1469,607 @@
 										</div>
 									</div>
 								</div>
-								<div class="productslist__item productslist__item_hidden-mobile">
+								<div class="productslist__item">
+										<div class="productcard">
+											<div class="productcard_absolute">
+											<div class="productcard__top">
+												<a href="#">
+													<div class="productcard__img productcard__img_large">
+														<img src="/images/product.png" alt=""/>
+													</div>
+													<div class="productcard__options">
+														<div class="productcard__action">
+															<span>-25%</span>
+														</div>
+														<div class="productcard__new">
+															<span>New</span>
+														</div>
+													</div>
+													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
+													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
+												</a>
+											</div>
+											<div class="productcard__bottom">
+												<div class="productcard__info">Шерсть, Osta</div>
+
+												<div class="productcard__form">
+													<form action="">
+														<div class="productcard__size">
+															<label class="wrap">
+																<select name="size" id="">
+																	<option selected="selected" value="0">Выберите размер:</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																</select>
+															</label>
+														</div>
+													
+														<div class="productcard_add">
+															<div class="quantity">
+															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
+															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
+															</div>												
+															<a href="#" class="btn_main btn_main2 btn_cart">
+																<span>В корзину</span>
+															</a>
+															<div class="tofav">
+																<a href="#" class="addtofav">
+																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+																</a>
+																<a href="#" class="addtofav addtofav_active">
+																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+																</a>
+																
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="productslist__item">
+										<div class="productcard">
+											<div class="productcard_absolute">
+											<div class="productcard__top">
+												<a href="#">
+													<div class="productcard__img productcard__img_large">
+														<img src="/images/product.png" alt=""/>
+													</div>
+													<div class="productcard__options">
+														<div class="productcard__action">
+															<span>-25%</span>
+														</div>
+														<div class="productcard__new">
+															<span>New</span>
+														</div>
+													</div>
+													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
+													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
+												</a>
+											</div>
+											<div class="productcard__bottom">
+												<div class="productcard__info">Шерсть, Osta</div>
+
+												<div class="productcard__form">
+													<form action="">
+														<div class="productcard__size">
+															<label class="wrap">
+																<select name="size" id="">
+																	<option selected="selected" value="0">Выберите размер:</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																</select>
+															</label>
+														</div>
+													
+														<div class="productcard_add">
+															<div class="quantity">
+															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
+															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
+															</div>												
+															<a href="#" class="btn_main btn_main2 btn_cart">
+																<span>В корзину</span>
+															</a>
+															<div class="tofav">
+																<a href="#" class="addtofav">
+																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+																</a>
+																<a href="#" class="addtofav addtofav_active">
+																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+																</a>
+																
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="productslist__item">
+										<div class="productcard">
+											<div class="productcard_absolute">
+											<div class="productcard__top">
+												<a href="#">
+													<div class="productcard__img productcard__img_large">
+														<img src="/images/product.png" alt=""/>
+													</div>
+													<div class="productcard__options">
+														<div class="productcard__action">
+															<span>-25%</span>
+														</div>
+														<div class="productcard__new">
+															<span>New</span>
+														</div>
+													</div>
+													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
+													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
+												</a>
+											</div>
+											<div class="productcard__bottom">
+												<div class="productcard__info">Шерсть, Osta</div>
+
+												<div class="productcard__form">
+													<form action="">
+														<div class="productcard__size">
+															<label class="wrap">
+																<select name="size" id="">
+																	<option selected="selected" value="0">Выберите размер:</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																</select>
+															</label>
+														</div>
+													
+														<div class="productcard_add">
+															<div class="quantity">
+															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
+															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
+															</div>												
+															<a href="#" class="btn_main btn_main2 btn_cart">
+																<span>В корзину</span>
+															</a>
+															<div class="tofav">
+																<a href="#" class="addtofav">
+																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+																</a>
+																<a href="#" class="addtofav addtofav_active">
+																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+																</a>
+																
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="productslist__item">
+										<div class="productcard">
+											<div class="productcard_absolute">
+											<div class="productcard__top">
+												<a href="#">
+													<div class="productcard__img productcard__img_large">
+														<img src="/images/product.png" alt=""/>
+													</div>
+													<div class="productcard__options">
+														<div class="productcard__action">
+															<span>-25%</span>
+														</div>
+														<div class="productcard__new">
+															<span>New</span>
+														</div>
+													</div>
+													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
+													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
+												</a>
+											</div>
+											<div class="productcard__bottom">
+												<div class="productcard__info">Шерсть, Osta</div>
+
+												<div class="productcard__form">
+													<form action="">
+														<div class="productcard__size">
+															<label class="wrap">
+																<select name="size" id="">
+																	<option selected="selected" value="0">Выберите размер:</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																</select>
+															</label>
+														</div>
+													
+														<div class="productcard_add">
+															<div class="quantity">
+															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
+															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
+															</div>												
+															<a href="#" class="btn_main btn_main2 btn_cart">
+																<span>В корзину</span>
+															</a>
+															<div class="tofav">
+																<a href="#" class="addtofav">
+																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+																</a>
+																<a href="#" class="addtofav addtofav_active">
+																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+																</a>
+																
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="productslist__item">
+										<div class="productcard">
+											<div class="productcard_absolute">
+											<div class="productcard__top">
+												<a href="#">
+													<div class="productcard__img productcard__img_large">
+														<img src="/images/product.png" alt=""/>
+													</div>
+													<div class="productcard__options">
+														<div class="productcard__action">
+															<span>-25%</span>
+														</div>
+														<div class="productcard__new">
+															<span>New</span>
+														</div>
+													</div>
+													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
+													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
+												</a>
+											</div>
+											<div class="productcard__bottom">
+												<div class="productcard__info">Шерсть, Osta</div>
+
+												<div class="productcard__form">
+													<form action="">
+														<div class="productcard__size">
+															<label class="wrap">
+																<select name="size" id="">
+																	<option selected="selected" value="0">Выберите размер:</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																</select>
+															</label>
+														</div>
+													
+														<div class="productcard_add">
+															<div class="quantity">
+															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
+															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
+															</div>												
+															<a href="#" class="btn_main btn_main2 btn_cart">
+																<span>В корзину</span>
+															</a>
+															<div class="tofav">
+																<a href="#" class="addtofav">
+																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+																</a>
+																<a href="#" class="addtofav addtofav_active">
+																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+																</a>
+																
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="productslist__item">
+										<div class="productcard">
+											<div class="productcard_absolute">
+											<div class="productcard__top">
+												<a href="#">
+													<div class="productcard__img productcard__img_large">
+														<img src="/images/product.png" alt=""/>
+													</div>
+													<div class="productcard__options">
+														<div class="productcard__action">
+															<span>-25%</span>
+														</div>
+														<div class="productcard__new">
+															<span>New</span>
+														</div>
+													</div>
+													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
+													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
+												</a>
+											</div>
+											<div class="productcard__bottom">
+												<div class="productcard__info">Шерсть, Osta</div>
+
+												<div class="productcard__form">
+													<form action="">
+														<div class="productcard__size">
+															<label class="wrap">
+																<select name="size" id="">
+																	<option selected="selected" value="0">Выберите размер:</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																</select>
+															</label>
+														</div>
+													
+														<div class="productcard_add">
+															<div class="quantity">
+															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
+															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
+															</div>												
+															<a href="#" class="btn_main btn_main2 btn_cart">
+																<span>В корзину</span>
+															</a>
+															<div class="tofav">
+																<a href="#" class="addtofav">
+																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+																</a>
+																<a href="#" class="addtofav addtofav_active">
+																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+																</a>
+																
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="productslist__item">
+										<div class="productcard">
+											<div class="productcard_absolute">
+											<div class="productcard__top">
+												<a href="#">
+													<div class="productcard__img productcard__img_large">
+														<img src="/images/product.png" alt=""/>
+													</div>
+													<div class="productcard__options">
+														<div class="productcard__action">
+															<span>-25%</span>
+														</div>
+														<div class="productcard__new">
+															<span>New</span>
+														</div>
+													</div>
+													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
+													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
+												</a>
+											</div>
+											<div class="productcard__bottom">
+												<div class="productcard__info">Шерсть, Osta</div>
+
+												<div class="productcard__form">
+													<form action="">
+														<div class="productcard__size">
+															<label class="wrap">
+																<select name="size" id="">
+																	<option selected="selected" value="0">Выберите размер:</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																</select>
+															</label>
+														</div>
+													
+														<div class="productcard_add">
+															<div class="quantity">
+															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
+															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
+															</div>												
+															<a href="#" class="btn_main btn_main2 btn_cart">
+																<span>В корзину</span>
+															</a>
+															<div class="tofav">
+																<a href="#" class="addtofav">
+																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+																</a>
+																<a href="#" class="addtofav addtofav_active">
+																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+																</a>
+																
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="productslist__item">
+										<div class="productcard">
+											<div class="productcard_absolute">
+											<div class="productcard__top">
+												<a href="#">
+													<div class="productcard__img productcard__img_large">
+														<img src="/images/product.png" alt=""/>
+													</div>
+													<div class="productcard__options">
+														<div class="productcard__action">
+															<span>-25%</span>
+														</div>
+														<div class="productcard__new">
+															<span>New</span>
+														</div>
+													</div>
+													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
+													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
+												</a>
+											</div>
+											<div class="productcard__bottom">
+												<div class="productcard__info">Шерсть, Osta</div>
+
+												<div class="productcard__form">
+													<form action="">
+														<div class="productcard__size">
+															<label class="wrap">
+																<select name="size" id="">
+																	<option selected="selected" value="0">Выберите размер:</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																</select>
+															</label>
+														</div>
+													
+														<div class="productcard_add">
+															<div class="quantity">
+															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
+															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
+															</div>												
+															<a href="#" class="btn_main btn_main2 btn_cart">
+																<span>В корзину</span>
+															</a>
+															<div class="tofav">
+																<a href="#" class="addtofav">
+																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+																</a>
+																<a href="#" class="addtofav addtofav_active">
+																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+																</a>
+																
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="productslist__item">
+										<div class="productcard">
+											<div class="productcard_absolute">
+											<div class="productcard__top">
+												<a href="#">
+													<div class="productcard__img productcard__img_large">
+														<img src="/images/product.png" alt=""/>
+													</div>
+													<div class="productcard__options">
+														<div class="productcard__action">
+															<span>-25%</span>
+														</div>
+														<div class="productcard__new">
+															<span>New</span>
+														</div>
+													</div>
+													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
+													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
+												</a>
+											</div>
+											<div class="productcard__bottom">
+												<div class="productcard__info">Шерсть, Osta</div>
+
+												<div class="productcard__form">
+													<form action="">
+														<div class="productcard__size">
+															<label class="wrap">
+																<select name="size" id="">
+																	<option selected="selected" value="0">Выберите размер:</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																</select>
+															</label>
+														</div>
+													
+														<div class="productcard_add">
+															<div class="quantity">
+															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
+															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
+															</div>												
+															<a href="#" class="btn_main btn_main2 btn_cart">
+																<span>В корзину</span>
+															</a>
+															<div class="tofav">
+																<a href="#" class="addtofav">
+																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+																</a>
+																<a href="#" class="addtofav addtofav_active">
+																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+																</a>
+																
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="productslist__item">
+										<div class="productcard">
+											<div class="productcard_absolute">
+											<div class="productcard__top">
+												<a href="#">
+													<div class="productcard__img productcard__img_large">
+														<img src="/images/product.png" alt=""/>
+													</div>
+													<div class="productcard__options">
+														<div class="productcard__action">
+															<span>-25%</span>
+														</div>
+														<div class="productcard__new">
+															<span>New</span>
+														</div>
+													</div>
+													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
+													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
+												</a>
+											</div>
+											<div class="productcard__bottom">
+												<div class="productcard__info">Шерсть, Osta</div>
+
+												<div class="productcard__form">
+													<form action="">
+														<div class="productcard__size">
+															<label class="wrap">
+																<select name="size" id="">
+																	<option selected="selected" value="0">Выберите размер:</option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																</select>
+															</label>
+														</div>
+													
+														<div class="productcard_add">
+															<div class="quantity">
+															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
+															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
+															</div>												
+															<a href="#" class="btn_main btn_main2 btn_cart">
+																<span>В корзину</span>
+															</a>
+															<div class="tofav">
+																<a href="#" class="addtofav">
+																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+																</a>
+																<a href="#" class="addtofav addtofav_active">
+																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+																</a>
+																
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="productslist__item">
 										<div class="productcard">
 											<div class="productcard_absolute">
 											<div class="productcard__top">
@@ -1602,238 +2130,29 @@
 									</div>
 								</div>
 								
+								
 							</div>
 							
-							<div class="showall"><span class="btn_border">Показать все</span></div>
-							
-							<div class="productslist__items productslist__items_hidden">
-								<div class="productslist__item">
-										<div class="productcard">
-											<div class="productcard_absolute">
-											<div class="productcard__top">
-												<a href="#">
-													<div class="productcard__img productcard__img_large">
-														<img src="/images/product.png" alt=""/>
-													</div>
-													<div class="productcard__options">
-														<div class="productcard__action">
-															<span>-25%</span>
-														</div>
-														<div class="productcard__new">
-															<span>New</span>
-														</div>
-													</div>
-													<div class="productcard__title"><span>Ковер Rabbit Rex E21 HIDDEN</span></div>
-													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
-												</a>
-											</div>
-											<div class="productcard__bottom">
-												<div class="productcard__info">Шерсть, Osta</div>
-
-												<div class="productcard__form">
-													<form action="">
-														<div class="productcard__size">
-															<label class="wrap">
-																<select name="size" id="">
-																	<option selected="selected" value="0">Выберите размер:</option>
-																	<option value="1">1</option>
-																	<option value="2">2</option>
-																</select>
-															</label>
-														</div>
-													
-														<div class="productcard_add">
-															<div class="quantity">
-															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
-															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
-															</div>												
-															<a href="#" class="btn_main btn_main2 btn_cart">
-																<span>В корзину</span>
-															</a>
-															<div class="tofav">
-																<a href="#" class="addtofav">
-																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
-																</a>
-																<a href="#" class="addtofav addtofav_active">
-																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-																</a>
-																
-															</div>
-														</div>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="productslist__item productslist__item_hidden">
-										<div class="productcard">
-											<div class="productcard_absolute">
-											<div class="productcard__top">
-												<a href="#">
-													<div class="productcard__img productcard__img_large">
-														<img src="/images/product.png" alt=""/>
-													</div>
-													<div class="productcard__options">
-														<div class="productcard__action">
-															<span>-25%</span>
-														</div>
-														<div class="productcard__new">
-															<span>New</span>
-														</div>
-													</div>
-													<div class="productcard__title"><span>Ковер Rabbit Rex E21</span></div>
-													<div class="productcard__price-new">3450 - 35000 <span>₽</span></div>
-												</a>
-											</div>
-											<div class="productcard__bottom">
-												<div class="productcard__info">Шерсть, Osta</div>
-
-												<div class="productcard__form">
-													<form action="">
-														<div class="productcard__size">
-															<label class="wrap">
-																<select name="size" id="">
-																	<option selected="selected" value="0">Выберите размер:</option>
-																	<option value="1">1</option>
-																	<option value="2">2</option>
-																</select>
-															</label>
-														</div>
-													
-														<div class="productcard_add">
-															<div class="quantity">
-															  <input type="button" value="–" class="quantity-minus" data-field="quantity">
-															  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-															  <input type="button" value="+" class="quantity-plus" data-field="quantity">
-															</div>												
-															<a href="#" class="btn_main btn_main2 btn_cart">
-																<span>В корзину</span>
-															</a>
-															<div class="tofav">
-																<a href="#" class="addtofav">
-																	<svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
-																</a>
-																<a href="#" class="addtofav addtofav_active">
-																	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-																</a>
-																
-															</div>
-														</div>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
 							</div>
 							
-							<div class="fitchesblock">
-								<div class="fitches">
-									<div class="ficthes__items ficthes__items_flex">
-										<div class="fitches__item">
-											<div class="fitches__content">
-												<div class="fitches__icon"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480.006 480.006" style="enable-background:new 0 0 480.006 480.006;" xml:space="preserve"><g><g><path d="M478.66,395.595l-58.464-87.728l10.248-3.2c4.218-1.317,6.569-5.803,5.252-10.021c-0.054-0.174-0.114-0.346-0.18-0.515l-17.976-46.232l36.608-34.04c3.234-3.01,3.416-8.072,0.406-11.306c-0.13-0.14-0.266-0.275-0.406-0.406l-36.608-34.032l17.984-46.232c1.601-4.118-0.439-8.754-4.557-10.356c-0.17-0.066-0.342-0.126-0.515-0.18l-48.128-15.008l-4.208-49.36c-0.186-2.197-1.264-4.221-2.984-5.6c-1.711-1.375-3.915-1.981-6.088-1.672l-50.088,6.936L293.309,3.891c-2.271-3.79-7.185-5.021-10.974-2.75c-0.098,0.059-0.194,0.119-0.29,0.182l-42.04,27.672L197.973,1.323c-3.689-2.431-8.651-1.411-11.082,2.278c-0.063,0.095-0.123,0.192-0.182,0.29l-25.648,42.768l-50.08-6.936c-4.376-0.608-8.417,2.447-9.025,6.823c-0.02,0.141-0.035,0.283-0.047,0.425l-4.216,49.36l-48.088,15.008c-4.218,1.317-6.569,5.803-5.252,10.021c0.054,0.174,0.114,0.346,0.18,0.515l17.976,46.232l-36.648,34.04c-3.234,3.01-3.416,8.072-0.406,11.306c0.13,0.14,0.266,0.275,0.406,0.406l36.608,34.032l-17.984,46.232c-1.601,4.118,0.439,8.754,4.557,10.356c0.17,0.066,0.342,0.126,0.515,0.18l10.616,3.304L1.189,403.811c-2.316,3.763-1.144,8.69,2.619,11.006c1.682,1.035,3.687,1.412,5.629,1.058L89.7,401.283l14.464,72.32c0.634,3.172,3.115,5.65,6.288,6.28c0.512,0.091,1.032,0.131,1.552,0.12c2.674,0,5.172-1.335,6.656-3.56l56.128-84.192l11.912,19.864c1.122,1.872,2.96,3.204,5.088,3.688c0.596,0.137,1.205,0.204,1.816,0.2c1.564,0,3.094-0.459,4.4-1.32l42-27.672l42.032,27.672c3.689,2.431,8.651,1.411,11.082-2.278c0.063-0.095,0.123-0.192,0.182-0.29l11.92-19.872l56.128,84.2c1.484,2.225,3.982,3.56,6.656,3.56c0.521,0.001,1.041-0.05,1.552-0.152c3.173-0.63,5.654-3.108,6.288-6.28l14.56-72.952l80.88,7.384c4.4,0.398,8.29-2.846,8.689-7.246C480.138,398.937,479.675,397.115,478.66,395.595z M116.085,451.491l-12.24-61.088c-0.855-4.278-4.979-7.082-9.272-6.304l-70.36,12.8l51.72-84.016l21.752,6.784l4.208,49.36c0.186,2.197,1.264,4.221,2.984,5.6c1.714,1.368,3.915,1.973,6.088,1.672l50.088-6.936l4.632,7.728L116.085,451.491z M307.949,356.619l-24.08,40.144l-39.464-26.016c-2.67-1.758-6.13-1.758-8.8,0l-39.472,25.984l-24.08-40.152c-1.444-2.41-4.047-3.886-6.856-3.888c-0.37-0.001-0.739,0.026-1.104,0.08l-46.968,6.496l-3.952-46.312c-0.277-3.243-2.491-5.995-5.6-6.96l-45.064-14.064l16.8-43.296c1.189-3.056,0.393-6.527-2.008-8.76l-34.24-31.872l34.28-31.872c2.401-2.233,3.197-5.704,2.008-8.76l-16.8-43.312l45.08-14.056c3.109-0.965,5.323-3.717,5.6-6.96l3.952-46.312l46.968,6.504c3.192,0.456,6.346-1.048,8-3.816l24.08-40.144l39.376,25.984c2.67,1.758,6.13,1.758,8.8,0l39.472-25.984l24.08,40.152c1.66,2.739,4.786,4.234,7.96,3.808l46.968-6.496l3.952,46.312c0.277,3.243,2.491,5.995,5.6,6.96l45.08,14.064l-16.848,43.296c-1.189,3.056-0.393,6.527,2.008,8.76l34.272,31.872l-34.28,31.872c-2.401,2.233-3.197,5.704-2.008,8.76l16.8,43.312l-45.04,14.056c-3.109,0.965-5.323,3.717-5.6,6.96l-3.952,46.312l-46.96-6.472C312.732,352.378,309.607,353.877,307.949,356.619z M384.725,384.003c-4.054-0.314-7.714,2.423-8.56,6.4l-12.216,61.064l-49.6-74.4l4.624-7.712l50.08,6.936c4.376,0.608,8.417-2.447,9.025-6.823c0.02-0.141,0.035-0.283,0.047-0.425l4.216-49.36l21.96-6.848l51.768,77.688L384.725,384.003z"/></g></g><g><g><path d="M360.004,168.003c0-13.255-10.745-24-24-24h-56v-32c0.022-22.069-17.851-39.978-39.92-40c-0.027,0-0.053,0-0.08,0c-4.418,0-8,3.582-8,8v38.112l-14.4,28.736l-25.744,20.6c-0.26-4.159-3.689-7.41-7.856-7.448h-56c-4.418,0-8,3.582-8,8v120c0,4.418,3.582,8,8,8h56c4.418,0,8-3.582,8-8h120c13.228-0.066,23.934-10.772,24-24c-0.027-4.126-1.13-8.174-3.2-11.744c1.476-0.921,2.84-2.011,4.064-3.248c7.757-7.544,9.38-19.401,3.936-28.752c1.476-0.921,2.84-2.011,4.064-3.248c7.757-7.544,9.38-19.401,3.936-28.752c1.476-0.921,2.84-2.011,4.064-3.248C357.46,180.547,360.037,174.406,360.004,168.003z M176.005,280.003h-40v-104h40V280.003z M341.556,173.699c-1.459,1.493-3.465,2.325-5.552,2.304h-32v16h24c4.418,0,8,3.582,8,8c0.007,2.156-0.879,4.218-2.448,5.696c-1.459,1.493-3.465,2.325-5.552,2.304h-32v16h24c4.418,0,8,3.582,8,8c0.007,2.156-0.879,4.218-2.448,5.696c-1.459,1.493-3.465,2.325-5.552,2.304h-32v16h24c4.418,0,8,3.582,8,8c0.007,2.156-0.879,4.218-2.448,5.696c-1.459,1.493-3.465,2.325-5.552,2.304h-120v-84.16l37-29.592c0.904-0.725,1.641-1.636,2.16-2.672l16-32c0.554-1.111,0.841-2.335,0.84-3.576V89.371c9.606,3.371,16.026,12.452,16,22.632v40c0,4.418,3.582,8,8,8h64c4.418,0,8,3.582,8,8C344.012,170.158,343.125,172.22,341.556,173.699z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></div>
-												<div class="fitches__text">
-													<div class="fitches__title">Работаем с 2005 года</div>
-													<div class="fitches__info">Широкий ассортимент из 5 000 ковров</div>
-												</div>
-											</div>
-										</div>
-										<div class="fitches__item">
-											<div class="fitches__content">
-												<div class="fitches__icon">
-												<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve"><g><g><path d="M460.056,209.104c-2.442-1.434-5.46-1.471-7.936-0.096l-22.016,12.232L424,7.776c-0.121-4.331-3.668-7.778-8-7.776h-56c-4.332-0.002-7.879,3.445-8,7.776L344.544,268.8L320,282.4V216c-0.002-4.418-3.586-7.998-8.004-7.996c-1.356,0.001-2.69,0.346-3.876,1.004L176,282.4V216c-0.002-4.418-3.586-7.998-8.004-7.996c-1.356,0.001-2.69,0.346-3.876,1.004l-144,80c-2.541,1.409-4.119,4.086-4.12,6.992v176c0,4.418,3.582,8,8,8h432c4.418,0,8-3.582,8-8V216C464,213.165,462.5,210.541,460.056,209.104z M367.776,16h40.448l0.464,16H367.32L367.776,16z M366.856,48h42.288l5.2,181.992L360.8,259.728L366.856,48z M232,464h-48v-40h48V464z M296,464h-48v-40h48V464z M448,464H312v-48c0-4.418-3.582-8-8-8H176c-4.418,0-8,3.582-8,8v48H32V300.712L160,229.6V296c0.002,4.418,3.586,7.998,8.004,7.996c1.356-0.001,2.69-0.346,3.876-1.004L304,229.6V296c0.002,4.418,3.586,7.998,8.004,7.996c1.356-0.001,2.69-0.346,3.876-1.004l75.448-41.912L426.4,241.6l21.6-12V464z"/></g></g><g><g><path d="M128,320H64c-4.418,0-8,3.582-8,8v32c0,4.418,3.582,8,8,8h64c4.418,0,8-3.582,8-8v-32C136,323.582,132.418,320,128,320z M120,352H72v-16h48V352z"/></g></g><g><g><path d="M272,320h-64c-4.418,0-8,3.582-8,8v32c0,4.418,3.582,8,8,8h64c4.418,0,8-3.582,8-8v-32C280,323.582,276.418,320,272,320z M264,352h-48v-16h48V352z"/></g></g><g><g><path d="M416,320h-64c-4.418,0-8,3.582-8,8v32c0,4.418,3.582,8,8,8h64c4.418,0,8-3.582,8-8v-32C424,323.582,420.418,320,416,320z M408,352h-48v-16h48V352z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-												</div>
-												<div class="fitches__text">
-													<div class="fitches__title">Поставки напрямую из фабрик</div>
-													<div class="fitches__info">Лучшее соотношение цены и качества</div>
-												</div>
-											</div>
-										</div>
-										<div class="fitches__item">
-											<div class="fitches__content">
-												<div class="fitches__icon">
-													<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 512 512" width="512" height="512"><path d="M222.606,123.454l-5.8,33.311a6,6,0,0,0,8.69,6.345l29.965-15.661,29.889,15.806a6,6,0,0,0,8.721-6.3l-5.635-33.338,24.268-23.542a6,6,0,0,0-3.3-10.242L275.96,84.887,261.07,54.531a6,6,0,0,0-5.372-3.357h-.015a6,6,0,0,0-5.374,3.332L235.273,84.788,201.8,89.569a6,6,0,0,0-3.35,10.226Zm17.486-27.232a6,6,0,0,0,4.526-3.272l11.033-22.219L266.576,93a6,6,0,0,0,4.509,3.293l24.542,3.626L277.82,117.2a6,6,0,0,0-1.738,5.307l4.135,24.461-21.931-11.6a6,6,0,0,0-5.584-.013l-21.986,11.49,4.253-24.441a6,6,0,0,0-1.713-5.314l-17.722-17.36Z"/><path d="M378.493,145.448,373.4,174.713a6,6,0,0,0,8.69,6.346L408.416,167.3l26.258,13.886a6,6,0,0,0,8.721-6.3l-4.95-29.288,21.32-20.683a6,6,0,0,0-3.3-10.242l-29.384-4.342L414,83.659a6,6,0,0,0-5.373-3.357h-.014a6,6,0,0,0-5.374,3.332l-13.21,26.6-29.405,4.2a6,6,0,0,0-3.351,10.225Zm16.354-23.777a6,6,0,0,0,4.526-3.272l9.206-18.54,9.117,18.585a6,6,0,0,0,4.509,3.293l20.478,3.026-14.858,14.414a6,6,0,0,0-1.738,5.306l3.45,20.412-18.3-9.677a5.994,5.994,0,0,0-5.584-.014l-18.346,9.588,3.549-20.4a6,6,0,0,0-1.713-5.314L374.355,124.6Z"/><path d="M72.615,145.448l-5.092,29.265a6,6,0,0,0,8.691,6.346L102.539,167.3,128.8,181.186a6,6,0,0,0,8.722-6.3l-4.951-29.288,21.32-20.683a6,6,0,0,0-3.3-10.242L121.2,110.327,108.121,83.659a6,6,0,0,0-5.372-3.357h-.015a6,6,0,0,0-5.374,3.332l-13.21,26.6-29.405,4.2a6,6,0,0,0-3.35,10.225ZM88.97,121.671A6,6,0,0,0,93.5,118.4l9.207-18.54,9.116,18.585a6,6,0,0,0,4.51,3.293l20.478,3.026-14.858,14.414a6,6,0,0,0-1.739,5.306l3.45,20.412-18.3-9.677a5.994,5.994,0,0,0-5.584-.014L81.43,164.792l3.548-20.4a6,6,0,0,0-1.712-5.314L68.478,124.6Z"/><path d="M256,187.146a48.164,48.164,0,0,0-48.109,48.11v28.073a48.109,48.109,0,1,0,96.218,0V235.256A48.164,48.164,0,0,0,256,187.146Zm36.109,76.183a36.109,36.109,0,1,1-72.218,0V235.256a36.109,36.109,0,1,1,72.218,0Z"/><path d="M405.3,210.936a44.331,44.331,0,0,0-44.281,44.281v25.52a44.281,44.281,0,1,0,88.562,0v-25.52A44.331,44.331,0,0,0,405.3,210.936Zm32.281,69.8a32.281,32.281,0,1,1-64.562,0v-25.52a32.281,32.281,0,1,1,64.562,0Z"/><path d="M456.339,333.982H440.206a5.458,5.458,0,0,1-5.452-5.451,6,6,0,0,0-11.647-2.026l-6.416,17.876a12.014,12.014,0,0,1-22.667-.146l-6.135-17.8a6,6,0,0,0-9.915-2.287l-.145.144a6,6,0,0,0-1.757,4.242,5.458,5.458,0,0,1-5.452,5.451H354.255a51.134,51.134,0,0,0-7.737.59A54.853,54.853,0,0,0,312.146,322.5H294.4a6.6,6.6,0,0,1-6.6-6.6,6,6,0,0,0-11.647-2.026L269.1,333.539a13.816,13.816,0,0,1-26.066-.167l-6.749-19.585a6,6,0,0,0-9.92-2.282l-.159.159a6,6,0,0,0-1.752,4.237,6.6,6.6,0,0,1-6.6,6.6h-18a54.85,54.85,0,0,0-34.378,12.079,51.059,51.059,0,0,0-7.731-.595H141.612a5.458,5.458,0,0,1-5.452-5.451,6,6,0,0,0-11.647-2.026L118.1,344.381a12.015,12.015,0,0,1-22.668-.146l-6.135-17.8a6,6,0,0,0-9.917-2.286l-.144.144a6,6,0,0,0-1.756,4.241,5.457,5.457,0,0,1-5.451,5.451H55.662A50.72,50.72,0,0,0,5,384.644v70.182a6,6,0,0,0,6,6H501a6,6,0,0,0,6-6V384.644A50.719,50.719,0,0,0,456.339,333.982ZM144.727,377.626v71.2H17V384.644a38.706,38.706,0,0,1,38.662-38.662H72.027A17.356,17.356,0,0,0,82.208,342.7l1.877,5.449a24.015,24.015,0,0,0,45.307.288l2.055-5.725a17.363,17.363,0,0,0,9.6,3.265c.109,0,.22.008.331.008h13.374A54.808,54.808,0,0,0,144.727,377.626Zm210.546,71.2H156.727v-71.2A43.176,43.176,0,0,1,199.854,334.5h18a18.511,18.511,0,0,0,11.5-3.989l2.333,6.773a25.816,25.816,0,0,0,48.706.31l2.535-7.064a18.5,18.5,0,0,0,10.878,3.96c.112.007.225.01.338.01h18a43.176,43.176,0,0,1,43.127,43.128Zm139.727,0H367.273v-71.2a54.808,54.808,0,0,0-10.027-31.644H370.62A17.357,17.357,0,0,0,380.8,342.7l1.877,5.449a24.015,24.015,0,0,0,45.307.288l2.055-5.725a17.363,17.363,0,0,0,9.6,3.265c.109,0,.22.008.33.008h16.366A38.706,38.706,0,0,1,495,384.644Z"/><path d="M62.422,255.217v25.52a44.281,44.281,0,1,0,88.562,0v-25.52a44.281,44.281,0,0,0-88.562,0Zm76.562,0v25.52a32.281,32.281,0,1,1-64.562,0v-25.52a32.281,32.281,0,0,1,64.562,0Z"/></svg>
-												</div>
-												<div class="fitches__text">
-													<div class="fitches__title">Комплекс услуг</div>
-													<div class="fitches__info">Розница, опт, дизайнерские решения</div>
-												</div>
-											</div>
-										</div>
-									</div>
+							<div class="pagination">
+								<div class="pagination__content">
+									<a href="" class="pagination__arrow pagination__arrow_left"><img src="/images/left.png" alt=""></a>
+									<ul>
+										<li class="active"><a href="">1</a></li>
+										<li><a href="">2</a></li>
+										<li><a href="">3</a></li>
+										<li><span>...</span></li>
+										<li><a href="">15</a></li>
+										
+									</ul>
+									<a href="" class="pagination__arrow pagination__arrow_right"><img src="/images/right.png" alt=""></a>
 								</div>
 							</div>
 							
-							<div class="reviewsblock">
-									<h2>Последние отзывы</h2>
-									<div class="reviews">
-										<div class="reviews__container">
-											<div class="reviews__slider">
-												<div class="reviews__slide">
-													<div class="reviews__item">
-														<div class="reviews__content">
-															<div class="reviews__name">Ольга</div>
-															<div class="reviews__rating">
-																<div class="rating_wrap small"><div class="rating"><span style="width: 96px;">5</span></div></div>
-															</div>
-															<div class="reviews__text">Бельгийское, проверенное временем качество по доступной цене. Стильные и отвечающие современным тенденциям ковры завоевали доверие покупателей... Бельгийское, проверенное временем качество по доступной цене. Стильные и отвечающие современным тенденциям ковры завоевали доверие покупателей...</div>
-														</div>
-													</div>
-												</div>
-												<div class="reviews__slide">
-													<div class="reviews__item">
-														<div class="reviews__content">
-															<div class="reviews__name">Ольга</div>
-															<div class="reviews__rating">
-																<div class="rating_wrap small"><div class="rating"><span style="width: 79px;">4</span></div></div>
-															</div>
-															<div class="reviews__text">Бельгийское, проверенное временем качество по доступной цене. Стильные и отвечающие современным тенденциям ковры завоевали доверие покупателей... Бельгийское, проверенное временем качество по доступной цене. Стильные и отвечающие современным тенденциям ковры завоевали доверие покупателей...</div>
-														</div>
-													</div>
-												</div>
-												<div class="reviews__slide">
-													<div class="reviews__item">
-														<div class="reviews__content">
-															<div class="reviews__name">Ольга</div>
-															<div class="reviews__rating">
-																<div class="rating_wrap small"><div class="rating"><span style="width: 59px;">3</span></div></div>
-															</div>
-															<div class="reviews__text">Бельгийское, проверенное временем качество по доступной цене. Стильные и отвечающие современным тенденциям ковры завоевали доверие покупателей... Бельгийское, проверенное временем качество по доступной цене. Стильные и отвечающие современным тенденциям ковры завоевали доверие покупателей...</div>
-														</div>
-													</div>
-												</div>
-												<div class="reviews__slide">
-													<div class="reviews__item">
-														<div class="reviews__content">
-															<div class="reviews__name">Ольга</div>
-															<div class="reviews__rating">
-																<div class="rating_wrap small"><div class="rating"><span style="width: 39px;">2</span></div></div>
-															</div>
-															<div class="reviews__text">Бельгийское, проверенное временем качество по доступной цене. Стильные и отвечающие современным тенденциям ковры завоевали доверие покупателей... Бельгийское, проверенное временем качество по доступной цене. Стильные и отвечающие современным тенденциям ковры завоевали доверие покупателей...</div>
-														</div>
-													</div>
-												</div>
-												<div class="reviews__slide">
-													<div class="reviews__item">
-														<div class="reviews__content">
-															<div class="reviews__name">Ольга</div>
-															<div class="reviews__rating">
-																<div class="rating_wrap small"><div class="rating"><span style="width: 19px;">1</span></div></div>
-															</div>
-															<div class="reviews__text">Бельгийское, проверенное временем качество по доступной цене. Стильные и отвечающие современным тенденциям ковры завоевали доверие покупателей... Бельгийское, проверенное временем качество по доступной цене. Стильные и отвечающие современным тенденциям ковры завоевали доверие покупателей...</div>
-														</div>
-													</div>
-												</div>
-												
-												
-											</div>
-										</div>
-									</div>
-								</div>
+							
+							
+							
 								
 								<div class="description">
 									<h1>ИНТЕРНЕТ-МАГАЗИН КОВРОВ SOFIA RUGS</h1>
