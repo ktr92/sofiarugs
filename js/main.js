@@ -124,6 +124,57 @@ $(document).ready(function() {
 	} catch(err) {
 	}
 	
+	
+	$('.productimg__images').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		infinite: true,
+		fade: true,
+		asNavFor: '.productimg__previews',
+		responsive: [
+				
+				{
+				  breakpoint: 1023,
+				  settings: {
+					
+					dots: true
+				  }
+				},
+				
+				]
+	});
+	
+	$('.productimg__previews').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		fade: false,
+		dots: false,
+		infinite: true,
+		vertical: false,
+		verticalSwiping: false,
+		centerMode: false,
+		asNavFor: '.productimg__images',
+			responsive: [	
+				
+				{
+				  breakpoint: 480,
+				  settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				  }
+				},
+				]
+
+	});
+	 	$(".productimg__preview").click(function(e){
+          e.preventDefault();
+		    actIndex = $(this).attr('data-slick-index');
+		  var slider = $( '.productimg__images' );
+			slider[0].slick.slickGoTo(parseInt(actIndex));
+        });
+	
+	
 	$('.search__button').click(function(e) {
 		e.preventDefault();
 		$('.search').toggleClass('search_open');
