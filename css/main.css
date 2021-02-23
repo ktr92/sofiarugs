@@ -515,7 +515,9 @@ ul.mainmenu__main>li.mainmenu__catalog>a {
 	text-align: center;
 	margin-bottom: 30px;
 }
-
+.defaultpage .contentpage {
+	padding: 45px 0 45px 0;
+}
 .mainslider__wrapper {
 	height: 525px;
 	background-position: center;
