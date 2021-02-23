@@ -23,46 +23,7 @@ $(document).ready(function() {
 			});
   });
 
-	try {	
-	  $('.productslider__slider').each(function() {
-		  $(this).slick({
-			infinite: true,
-			slidesToShow: 5,
-			slidesToScroll: 1,
-		  /* autoplay: true,
-			autoplaySpeed: 3000,*/
-			arrows: true,
-			dots: false,
-			nextArrow: $(this).parent().find('.productslider__right'),
-			prevArrow: $(this).parent().find('.productslider__left'),
-		   /* dotsClass: 'mainslider__dots_slick',*/
-		   responsive: [
-			{
-			  breakpoint: 999,
-			  settings: {
-				slidesToShow: 4,
-				slidesToScroll: 1,
-			  }
-			},
-			{
-			  breakpoint: 768,
-			  settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1,
-			  }
-			},
-			{
-			  breakpoint: 600,
-			  settings: {
-				slidesToShow: 2,
-				slidesToScroll: 1,
-			  }
-			}
-			]
-			});
-	  });
-	} catch(err) {
-	}
+	
 	
 	try {	
 	  $('.reviews__slider').each(function() {
@@ -154,6 +115,9 @@ $(document).ready(function() {
 		vertical: false,
 		verticalSwiping: false,
 		centerMode: false,
+		arrows: true,
+		nextArrow: '.productimg__arrow_right',
+		prevArrow: '.productimg__arrow_left',
 		asNavFor: '.productimg__images',
 			responsive: [	
 				
@@ -280,6 +244,67 @@ $(document).ready(function() {
 	$('.quantity').on('click', '.quantity-minus', function(e) {
 	  decrementValue(e);
 	});
+	
+	if ($(window).width() > 999) {	
+		(function($) {
+		$(function() {
+
+			$('.producttabs__header ul').on('click', 'li:not(.active)', function() {
+				$(this)
+					.addClass('active').siblings().removeClass('active')
+					.closest('div.producttabs').find('div.producttabs__content').removeClass('active').eq($(this).index()).addClass('active');
+			});
+
+		});
+		})(jQuery);
+	}
+	else {
+		$('.producttabs__content .producttabs__title').click(function (event) {
+		/* $(this).closest('.accordeon-js').find('.accordeon-contentjs').not($(this).next()).hide(300).removeClass('active'); */
+		$(this).closest('.producttabs__content').find('.producttabs__main .producttabs__title').not($(this)).removeClass('active');
+		$(this).toggleClass('active');
+		$(this).next('.producttabs__main').slideToggle().toggleClass('active');
+	});
+	}
+	
+	try {
+		$('.productslider__slider').each(function () {
+			$(this).slick({
+				infinite: false,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				arrows: true,
+				  centerPadding: '0',
+				  nextArrow: $(this).parent().find('.productslider__right'),
+				  prevArrow: $(this).parent().find('.productslider__left'),
+					dots: false,
+					centerPadding: 20,
+					responsive: [
+				 {
+				  breakpoint: 999,
+				  settings: {
+					slidesToShow: 3,
+					
+				  }
+				},
+				{
+				  breakpoint: 767,
+				  settings: {
+					slidesToShow: 2,
+				  }
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					slidesToShow: 1,
+					}
+				}
+				]
+			});
+		});
+	} catch (err) {
+	}
+	
 	
 });		
 	
